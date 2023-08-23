@@ -12,11 +12,11 @@ class Anagram:
         anagram_matches = []
 
         for anagram in anagram_list:
-            if self.word != anagram.lower() and self.sorted_word == self.sort_word(anagram.lower()):
+            # self.word != anagram.lower() 
+            if self.sorted_word == self.sort_word(anagram.lower()):
                 anagram_matches.append(anagram)
 
         return anagram_matches
     
         
-        
-        
+    
